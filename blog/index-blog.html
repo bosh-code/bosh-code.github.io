@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
+
     <!-- Latest compiled and minified CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- jQuery library -->
@@ -14,12 +14,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <title>Identity Values</title>
+<!--  <link href="/css/main.css" rel="stylesheet" type="text/css">-->
+  <link rel="stylesheet" href="/css/main.css">
+    <title>Blog Index</title>
 </head>
 
 <body>
 <main>
-
+    <!--Nav-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="/index.html">Index</a>
         <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
@@ -29,11 +31,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index-blog.html">Blog Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Identity & Values</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="identity-values.html">Identity & Values</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="learning-plan.html">Learning Plan</a>
@@ -41,6 +43,19 @@
             </ul>
         </div>
     </nav>
+    <!--Heading-->
+  <div class="list-container">
+      <h1 class="display-4">Blog Index</h1>
+    <hr class="my-4">
+    <p>Below is a list of links to my blog pages</p>
+  </div>
+    <!--List-->
+    <div class="list-container" style="margin: 15px">
+        <div class="list-group">
+            <a class="list-group-item list-group-item-action" href="1-blog.html">Entry 1</a>
+            <a class="list-group-item list-group-item-action disabled" href="#">Entry 2</a>
+        </div>
+    </div>
 
 </main>
 </body>
