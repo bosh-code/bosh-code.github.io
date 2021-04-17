@@ -85,6 +85,7 @@ out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
+.idea
 
 # JIRA plugin
 atlassian-ide-plugin.xml
@@ -114,3 +115,4 @@ modules.xml
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm+iml,macos
 /.idea/vcs.xml
+.DS_Store

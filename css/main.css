@@ -1,4 +1,14 @@
 .list-container {
-	/*	Place holder */
-	margin: 15px !important;
+	margin: 15px;
+	padding: 15px;
+	border-radius: .3rem;
+	max-width: 960px;
+}
+
+.heading-container {
+	margin: 15px;
+	padding: 15px;
+	background-color: #e9ecef;
+	border-radius: .3rem;
+	max-width: 960px;
 }
