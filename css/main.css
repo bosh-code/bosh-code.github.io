@@ -1,7 +1,7 @@
 .list-container {
 	padding: 15px;
 	border-radius: .3rem;
-	max-width: 960px;
+	/*max-width: 450px;*/
 }
 
 .heading-container {
@@ -9,5 +9,5 @@
 	padding: 15px;
 	background-color: #e9ecef;
 	border-radius: .3rem;
-	max-width: 960px;
+	/*max-width: 450px;*/
 }

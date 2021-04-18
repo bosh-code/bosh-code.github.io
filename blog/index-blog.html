@@ -7,6 +7,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <meta content="#da532c" name="msapplication-TileColor">
     <meta content="#ffffff" name="theme-color">
+
     <!--    Favicon -->
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
@@ -20,9 +21,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+
     <title>Blog Home</title>
-    <meta name="description" content="bosh-code.io Blog Home Page">
-    <meta name="author" content="Ryan Bosher">
+    <meta content="bosh-code.io Blog Home Page" name="description">
+    <meta content="Ryan Bosher" name="author">
 </head>
 
 <body>
@@ -49,20 +52,30 @@
             </ul>
         </div>
     </nav>
-    <!--Heading-->
-    <div class="heading-container">
-        <h1 class="display-4">Blog Home</h1>
-        <hr class="my-4">
-        <p>Below is a list of links to my blog pages</p>
-    </div>
-    <!--List-->
-    <div class="list-container">
-        <div class="list-group">
-            <a class="list-group-item list-group-item-action" href="1-blog.html">Entry 1</a>
-            <a class="list-group-item list-group-item-action disabled" href="#">Entry 2</a>
+    <div class="container">
+        <!--Heading-->
+        <div class="row" style="margin-top: 15px">
+            <div class="col">
+                <div class="heading-container">
+                    <h1 class="display-4">Blog Home</h1>
+                    <hr class="my-4">
+                    <p>Below is a list of links to my blog pages</p>
+                </div>
+            </div>
+            <!--List-->
+            <div class="col">
+                <div class="list-container">
+                    <div class="list-group">
+                        <a class="list-group-item list-group-item-action" href="1-blog.html">Entry 1</a>
+                        <a class="list-group-item list-group-item-action disabled" href="#">Entry 2</a>
+                        <a class="list-group-item list-group-item-action disabled" href="#">Entry 3</a>
+                        <a class="list-group-item list-group-item-action disabled" href="#">Entry 4</a>
+                        <a class="list-group-item list-group-item-action disabled" href="#">Entry 5</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
 </main>
 </body>
 
