@@ -26,6 +26,13 @@
 	border-radius: .5rem;
 }
 
+.list-group-item-action:focus, .list-group-item-action:hover {
+	z-index: 1;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #007aff;
+}
+
 .icon {
 	font-weight: 400;
 	font-size: 64px;
