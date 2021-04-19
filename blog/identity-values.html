@@ -7,6 +7,7 @@
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <meta content="#da532c" name="msapplication-TileColor">
     <meta content="#ffffff" name="theme-color">
+
     <!--    Favicon -->
     <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
     <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
@@ -20,35 +21,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+
     <title>Identity Values</title>
-    <meta name="description" content="bosh-code.io Identity & Values Page">
-    <meta name="author" content="Ryan Bosher">
+    <meta content="bosh-code.io Identity & Values Page" name="description">
+    <meta content="Ryan Bosher" name="author">
 </head>
 
 <body>
 <main>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/index.html">Index</a>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-                class="navbar-toggler"
-                data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index-blog.html">Blog Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Identity & Values</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="learning-plan.html">Learning Plan</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+
+    <!--Nav-->
+    <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+        ((function () {
+            (("#nav-placeholder").load("/nav.html"));
+		}()));
+    </script>
+
+    <!--    Body -->
 
 </main>
 </body>
