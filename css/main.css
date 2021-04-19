@@ -1,15 +1,18 @@
 .list-container {
 	padding: 15px;
-	border-radius: .3rem;
-	/*max-width: 450px;*/
+	border-radius: .5rem;
 }
 
 .heading-container {
 	margin: 15px;
 	padding: 15px;
 	background-color: #e9ecef;
-	border-radius: .3rem;
-	/*max-width: 450px;*/
+	border-radius: .5rem;
+}
+
+/* override */
+.list-group {
+	border-radius: .5rem;
 }
 
 .icon {
@@ -21,8 +24,9 @@
 	padding: 1.5rem;
 	margin-top: 15px;
 	margin-left: 15px;
+	margin-bottom: 15px;
 	border-width: 1px;
-	border-radius: .3rem;
+	border-radius: .5rem;
 	background-color: rgba(233, 236, 239, 100);
 }
 
@@ -32,4 +36,13 @@
 
 .blue-text {
 	color: rgba(0, 122, 255, 100);
+}
+
+/* override */
+.rounded {
+	border-radius: .5rem !important;
+}
+
+.drop-shadow {
+	filter: drop-shadow(4px 5px 4px rgba(56, 56, 56, 0.6));
 }
