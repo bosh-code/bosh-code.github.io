@@ -1,5 +1,12 @@
+/* override */
 .jumbotron {
 	margin-top: 45px;
+}
+
+/* override */
+.btn-primary {
+	background-color: #007aff;
+	border-color: #007aff;
 }
 
 .list-container {
@@ -31,7 +38,7 @@
 	margin-bottom: 15px;
 	border-width: 1px;
 	border-radius: .5rem;
-	background-color: rgba(233, 236, 239, 100);
+	background-color: #e9ecef;
 }
 
 .big-title {
@@ -39,7 +46,7 @@
 }
 
 .blue-text {
-	color: rgba(0, 122, 255, 100);
+	color: #007aff;
 }
 
 /* override */
