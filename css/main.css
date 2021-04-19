@@ -28,5 +28,8 @@
 
 .big-title {
 	padding: 1.5rem;
+}
+
+.blue-text {
 	color: rgba(0, 122, 255, 100);
 }
