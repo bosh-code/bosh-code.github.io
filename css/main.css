@@ -16,3 +16,17 @@
 	font-weight: 400;
 	font-size: 64px;
 }
+
+.content {
+	padding: 1.5rem;
+	margin-top: 15px;
+	margin-left: 15px;
+	border-width: 1px;
+	border-radius: .3rem;
+	background-color: #e9ecef;
+}
+
+.big-title {
+	padding: 1.5rem;
+	color: rgba(0, 122, 255, 100);
+}
