@@ -20,12 +20,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="/css/main.css" rel="stylesheet">
+    <link id="dark-theme-style" rel="stylesheet"/>
+
     <title>Index</title>
     <meta content="bosh-code.io Index Page" name="description">
     <meta content="Ryan Bosher" name="author">
 </head>
-
 <body>
+<header>
+    <!--    Placeholder -->
+    <div>
+        <!--            darkmode toggle-->
+        <a class="btn btn-outline-info btn-lg ml-auto font-weight-bold"
+           href="javascript:void(0)"
+           id="theme-toggler"
+           onclick="toggleTheme()"
+        ></a></div>
+</header>
 <main class="container">
     <div class="jumbotron">
         <h1 class="display-4 blue-text">bosh-code.github.io</h1>
@@ -38,5 +49,11 @@
         </p>
     </div>
 </main>
+<footer>
+    <!--    Placeholder-->
+</footer>
+
+<!--Darkmode toggler-->
+<script src="javascript/index.js"></script>
 </body>
 </html>
