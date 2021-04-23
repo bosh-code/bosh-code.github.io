@@ -1,3 +1,20 @@
+/*Custom*/
+
+.my-4 {
+	background-color: rgb(191, 191, 191) !important;
+}
+
+.list-group-item {
+	border-color: rgb(191, 191, 191) !important;
+}
+
+.disabled {
+	color: #6c757d !important;
+}
+
+/*End Custom*/
+
+
 a {
 	color: rgb(140, 140, 250);
 }
@@ -23,12 +40,10 @@ html {
 	background: rgb(31, 31, 31) !important;
 }
 
-.my-4 {
-	background-color: rgb(191, 191, 191) !important;
-}
+
 
 body {
-	background-color: rgb(31, 31, 31);
+	background-color: rgb(31, 31, 31) !important;
 	background-image: none !important;
 }
 
@@ -9866,5 +9881,5 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .drop-shadow {
-	filter: drop-shadow(rgba(56, 56, 56, 0.6) 4px 5px 4px);
+	filter: drop-shadow(4px 5px 4px rgba(82, 82, 82, 0.6) );
 }

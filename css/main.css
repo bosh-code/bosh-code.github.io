@@ -54,6 +54,7 @@
 
 .blue-text {
 	color: #007aff;
+	text-transform: lowercase;
 }
 
 /* override */
