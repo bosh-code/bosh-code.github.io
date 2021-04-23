@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <link id="dark-theme-style" rel="stylesheet"/>
 
     <title>Blog Post 1</title>
     <meta content="Blog Post 1" name="description">
@@ -29,6 +29,7 @@
 </head>
 
 <body>
+
 <main>
     <header>
         <!--Nav-->
@@ -43,7 +44,16 @@
 
 </main>
 <footer>
-    <!--    Placeholder-->
+    <!-- Placeholder -->
+    <!-- darkmode toggle -->
+    <div class="dark-mode-button-box">
+        <a class="btn btn-outline-info btn-md ml-auto font-weight-bold"
+           href="javascript:void(0)"
+           id="theme-toggler"
+           onclick="toggleTheme()">"placeholder"</a>
+    </div>
+    <!-- Scripts -->
+    <script src="../javascript/dark-mode.js"></script>
 </footer>
 </body>
 </html>

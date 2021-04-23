@@ -21,7 +21,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link href="/css/main.css" rel="stylesheet">
-    <link href="/css/main.css" rel="stylesheet" type="text/css">
     <link id="dark-theme-style" rel="stylesheet"/>
 
     <title>Blog Home</title>
@@ -49,13 +48,6 @@
             <div class="col">
                 <div class="heading-container">
                     <h1 class="display-4 blue-text">Blog Home</h1>
-                    <!-- darkmode toggle -->
-                    <div>
-                        <a class="btn btn-outline-info btn-md ml-auto font-weight-bold col-sm"
-                           href="javascript:void(0)"
-                           id="theme-toggler"
-                           onclick="toggleTheme()">"placeholder"</a>
-                    </div>
                     <hr class="my-4">
                     <p>List of links to my blog pages</p>
                 </div>
@@ -75,10 +67,17 @@
         </div>
     </div>
 </main>
-<script src="../javascript/index.js"></script>
 <footer>
-    <!--    Placeholder-->
-
+    <!-- Placeholder -->
+    <!-- darkmode toggle -->
+    <div class="dark-mode-button-box">
+        <a class="btn btn-outline-info btn-md ml-auto font-weight-bold"
+           href="javascript:void(0)"
+           id="theme-toggler"
+           onclick="toggleTheme()">"placeholder"</a>
+    </div>
+    <!-- Scripts -->
+    <script src="../javascript/dark-mode.js"></script>
 </footer>
 </body>
 </html>

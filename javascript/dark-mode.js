@@ -39,10 +39,10 @@ function toggleTheme() {
 
 function enableDarkTheme() {
 	DARK_STYLE_LINK.setAttribute("href", DARK_THEME_PATH);
-	THEME_TOGGLER.innerHTML = "🌙 Dark";
+	THEME_TOGGLER.innerHTML = "🌙&ensp;Dark";
 }
 
 function disableDarkTheme() {
 	DARK_STYLE_LINK.setAttribute("href", "");
-	THEME_TOGGLER.innerHTML = "🌞 Light";
+	THEME_TOGGLER.innerHTML = "🌞&ensp;Light";
 }
