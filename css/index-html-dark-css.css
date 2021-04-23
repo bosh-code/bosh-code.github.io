@@ -4875,7 +4875,7 @@ a.badge-dark.focus, a.badge-dark:focus {
 	box-shadow: rgba(53, 59, 65, 0.5) 0px 0px 0px 0.2rem;
 }
 
-.jumbotron {
+.title-margin {
 	padding: 2rem 1rem;
 	margin-bottom: 2rem;
 	background-color: rgb(43, 43, 43);
@@ -4883,7 +4883,7 @@ a.badge-dark.focus, a.badge-dark:focus {
 }
 
 @media (min-width: 576px) {
-	.jumbotron {
+	.title-margin {
 		padding: 4rem 2rem;
 	}
 }
@@ -9806,7 +9806,7 @@ a.text-dark:focus, a.text-dark:hover {
 	}
 }
 
-.jumbotron {
+.title-margin {
 	margin-top: 45px;
 }
 

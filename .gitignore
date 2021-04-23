@@ -116,3 +116,4 @@ modules.xml
 # End of https://www.toptal.com/developers/gitignore/api/webstorm+iml,macos
 /.idea/vcs.xml
 .DS_Store
+/archive/
