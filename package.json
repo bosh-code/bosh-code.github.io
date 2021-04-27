@@ -1,0 +1,15 @@
+{
+  "name": "bosh-code.gihub.io",
+  "version": "0.0.1",
+  "description": "personal blog",
+  "repository": {
+    "url": "https://github.com/bosh-code/bosh-code.github.io",
+    "type": "git"
+  },
+  "author": "Ryan Bosher <ryan.julian.bosher@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "purify-css": "^1.2.5"
+  }
+}
