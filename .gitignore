@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/webstorm+iml,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=webstorm+iml,macos
+# Created by https://www.toptal.com/developers/gitignore/api/macos,webstorm+iml
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,webstorm+iml
 
 ### macOS ###
 # General
@@ -85,7 +85,6 @@ out/
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
-.idea
 
 # JIRA plugin
 atlassian-ide-plugin.xml
@@ -113,7 +112,5 @@ modules.xml
 .idea/misc.xml
 *.ipr
 
-# End of https://www.toptal.com/developers/gitignore/api/webstorm+iml,macos
-/.idea/vcs.xml
-.DS_Store
-/archive/
+# End of https://www.toptal.com/developers/gitignore/api/macos,webstorm+iml
+/.idea/

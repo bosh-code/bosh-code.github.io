@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="Sprint 2" name="description">
+    <meta content="Ryan Bosher" name="author">
+    <link href="/assets/img/favicons/favicon.ico" rel="icon">
+
+    <title>Sprint 2</title>
+
+    <!-- Bootstrap core CSS & JQuery-->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom styles -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/dark.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" id="top">
+    <div id="header-placeholder"></div>
+    <div class="jumbotron p-md-4 text-white rounded-5rem bg-dark">
+        <div class="col px-0">
+            <h1 class="display-4 font-italic category-title">🏃‍♂️ Sprint II</h1>
+        </div>
+    </div>
+</div>
+<main class="container" id="main" role="main">
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 box-shadow">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-primary">Sprint 2</strong>
+                    <h3 class="mb-0">
+                        <a class="text-dark" href="/src/pages/posts/learning-plan.html">Learning Plan</a>
+                    </h3>
+                    <div class="mb-1 text-muted">April 16</div>
+                    <p class="card-text mb-auto">My personal learning plan, for managing my time and tactics on
+                        maximising.</p>
+                    <a href="/src/pages/posts/learning-plan.html">Continue reading</a>
+                </div>
+                <img alt="Card image cap" class="card-img-right flex-auto d-none d-md-block"
+                     data-src="holder.js/200x250?theme=thumb" src="#">
+            </div>
+        </div>
+    </div>
+</main>
+<div id="footer-placeholder"></div>
+<section id="scripts">
+    <script src="/assets/js/vendor/popper.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/holder.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap4-toggle.min.js"></script>
+    <script>
+		Holder.addTheme('thumb', {
+			bg: '#55595c',
+			fg: '#eceeef',
+			text: 'Thumbnail'
+		});
+    </script>
+    <script>
+		$(function () {
+			$("#header-placeholder").load("/src/components/header.html");
+		});
+    </script>
+    <script>
+		$(function () {
+			$("#footer-placeholder").load("/src/components/footer.html");
+		});
+    </script>
+</section>
+</script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="HTML & CSS - Margin, Border & Padding" name="description">
+    <meta content="Ryan Bosher" name="author">
+    <link href="/assets/img/favicons/favicon.ico" rel="icon">
+
+    <title>HTML & CSS - Margin, Border & Padding</title>
+
+    <!-- Bootstrap core CSS & JQuery-->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom styles -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/dark.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" id="top">
+    <div id="header-placeholder"></div>
+    <main class="container" id="main" role="main">
+        <div class="blog-main m-2">
+            <div class="blog-post">
+                <div class="jumbotron p-md-4 mb-2 text-white rounded-5rem bg-dark">
+                    <div class="col px-0">
+                        <h2 class="blog-post-title">Margin, Border & Padding in CSS</h2>
+                    </div>
+                </div>
+                <p class="blog-post-meta">April 14, 2021 by <a href="#main">Ryan</a>&emsp;This page is best viewed in
+                    Chrome using the Dev Tools.</p>
+                <p>This blog post explores the difference between the <strong>margin</strong>, <strong>border</strong>
+                    and
+                    <strong>padding</strong> properties of elements
+                    in CSS as well as the Box Model.</p>
+                <hr>
+                <p>Margin, Border & Padding are all CSS <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">properties</a>, that change
+                    how elements are <strong>positioned</strong> and interact with others on a webpage.
+                    The three properties behave in similar ways and are often confused, however they function in
+                    distinct ways. Margin, Border & Padding combined are referred to as the
+                    "<a href="https://www.w3schools.com/css/css_boxmodel.asp">CSS Box Model</a>", or <strong>Box
+                        model</strong>
+                    for short.</p>
+                <section id="margin">
+                    <h3>Margin</h3>
+                    <p>Inspect the text elements below to see a real example of how they are affected by margins.</p>
+                    <div class="row ml-1 mb-2">
+                        <img alt="Margin Example" class="col blog-image rounded-5rem"
+                             src="/assets/img/svg/examples/margin-example.svg">
+                        <div class="col blog-css-example-content display-4">
+                            <p class="blog-css-margin-example">Example 1</p>
+                            <p class="blog-css-margin-example-shorthand">Example 2</p>
+                            <p>No margins</p>
+                        </div>
+                    </div>
+                    <p>Margins clear an area <strong>outside</strong> the border and are always transparent.
+                        Margins can be thought of as the <strong>space between</strong> the border of one element
+                        and the next.</p>
+                    <p>Four margins need to be declared if they are not to collapse onto each other:</p>
+                    <ul>
+                        <li><code>margin-top: x;</code></li>
+                        <li><code>margin-right: x;</code></li>
+                        <li><code>margin-bottom: x;</code></li>
+                        <li><code>margin-left: x;</code></li>
+                    </ul>
+                    <p>Margin properties are usually defined in a clockwise order, starting from the top and moving
+                        around the element.<br>Margins can also be defined with <strong>shorthand</strong>. This
+                        condenses the 4 margin properties onto a single line, which is written as:</p>
+                    <ul>
+                        <li><code>margin: x x x x;</code></li>
+                    </ul>
+                    <p>The 4 values following the margin follow the clockwise order of margins.</p>
+                    <p><em>To learn more about margin properties, go <a
+                            href="https://www.smashingmagazine.com/2019/07/margins-in-css/">here</a>.</em></p>
+                </section>
+                <section id="border">
+                    <h3>Border</h3>
+                    <p>Inspect the text elements below to see a real example of how they are affected by borders.</p>
+                    <div class="row ml-1 mb-2">
+                        <img alt="Border Example" class="col blog-image rounded-5rem"
+                             src="/assets/img/svg/examples/border-example.svg">
+                        <div class="col blog-css-example-content display-4">
+                            <p class="blog-css-border-example">Solid</p>
+                            <p class="blog-css-border-example-shorthand">Transparent</p>
+                            <p>No borders</p>
+                        </div>
+                    </div>
+                    <p>Borders are properties that describe the usually visual borders of an element.
+                        Borders have 3 key components, <strong>Colour</strong>, <strong>Style</strong> and
+                        <strong>Width</strong>, as well as several other optional values.</p>
+                    <p>Borders are similar and often confused with outlines, however they differ in a few key ways:</p>
+                    <ul>
+                        <li>Outlines do not take up any space. They are drawn outside of an element's content.</li>
+                        <li>Outlines also do not have to be rectangular, although they usually are.</li>
+                    </ul>
+                    <p>The <code>border</code> CSS property is actually shorthand for the following CSS properties:</p>
+                    <ul>
+                        <li><code>border-color: x;</code></li>
+                        <li><code>border-style: x;</code></li>
+                        <li><code>border-width: x;</code></li>
+                    </ul>
+                    <p>Borders add a stroke to an element, <strong>before</strong> the margins start.
+                        <br>Borders can be transparent, dotted, thin, thick or any combination.</p>
+                    <p>Borders can be written with shorthand aswell:</p>
+                    <ul>
+                        <li><code>border: x style color;</code></li>
+                    </ul>
+                    <p><em>To learn more about border properties, go <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/border">here</a>.</em></p>
+                </section>
+                <section id="padding">
+                    <h3>Padding</h3>
+                    <p>Inspect the text elements below to see a real example of how they are affected by padding.</p>
+                    <div class="row ml-1 mb-2">
+                        <img alt="Padding Example" class="col blog-image rounded-5rem"
+                             src="/assets/img/svg/examples/padding-example.svg">
+                        <div class="col blog-css-example-content display-4">
+                            <p class="blog-css-padding-example">Example 1</p>
+                            <p class="blog-css-padding-example-shorthand">Example 2</p>
+                            <p>No padding</p>
+
+                        </div>
+                    </div>
+                    <p>Padding is similar to margin, however padding is located <strong>inside</strong> the border of
+                        an element. To create padding, either the surrounding element is grown or the content inside
+                        is shrunk.</p>
+                    <p>There are four main padding properties and values, however any can be applied:</p>
+                    <ul>
+                        <li><code>padding-top: x;</code></li>
+                        <li><code>padding-right: x;</code></li>
+                        <li><code>padding-bottom: x;</code></li>
+                        <li><code>padding-left: x;</code></li>
+                    </ul>
+                    <p>Padding properties are usually defined in a clockwise order, starting from the top and moving
+                        around the element.<br>Padding can also be defined with shorthand. This
+                        <strong>condenses up to 4</strong> padding properties onto a single line, which is written
+                        as:</p>
+                    <ul>
+                        <li><code>padding: x;</code><em> equal padding on all side</em></li>
+                        <li><code>padding: x x x x;</code><em> separate padding values for all sides</em></li>
+                    </ul>
+                    <p>The (up to) 4 values following the padding follow the clockwise order of padding.</p>
+                    <p><em>To learn more about padding properties, go <a
+                            href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding">here</a>.</em></p>
+                </section>
+                <section id="box-model">
+                    <h3>The CSS Box Model</h3>
+                    <p>Inspect the text element below to see a real example of how they are affected by the CSS box
+                        model.</p>
+                    <div class="row ml-1 mb-2">
+                        <img alt="Box Model Example" class="col blog-image rounded-5rem"
+                             src="/assets/img/svg/examples/box-model-example.svg">
+                        <div class="col blog-css-margin-example-shorthand blog-css-padding-example-shorthand blog-css-border-example display-4">
+                            <p>Hello World</p>
+                        </div>
+                    </div>
+                    <p>The CSS box model is a way to bring margins, borders and padding together. It provides a simple
+                        way
+                        to think and <strong>visualise</strong> how the 3 properties are going to appear and interact
+                        with each other.</p>
+                    <p>The CSS box model is more of a tool for visualising and teaching, rather than a rule, however it
+                        pays to be familiar with it.</p>
+                    <p><em>To learn more about the CSS box model, go <a
+                            href="https://www.w3schools.com/css/css_boxmodel.asp">here</a>.</em></p>
+
+                </section>
+            </div>
+            <nav aria-label="pagination-buttons" class="blog-pagination">
+                <a class="btn btn-outline-secondary disabled">Older</a>
+                <a class="btn btn-outline-primary" href="/src/pages/posts/identity-values.html">Newer</a>
+            </nav>
+        </div>
+    </main>
+</div>
+<div id="footer-placeholder"></div>
+<section id="scripts">
+    <script src="/assets/js/vendor/popper.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/holder.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap4-toggle.min.js"></script>
+    <script>
+		Holder.addTheme('thumb', {
+			bg: '#55595c',
+			fg: '#eceeef',
+			text: 'Thumbnail'
+		});
+    </script>
+    <script>
+		$(function () {
+			$("#header-placeholder").load("/src/components/header.html");
+		});
+    </script>
+    <script>
+		$(function () {
+			$("#footer-placeholder").load("/src/components/footer.html");
+		});
+    </script>
+</section>
+</body>
+</html>

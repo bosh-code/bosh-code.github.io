@@ -1,65 +1,166 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <meta content="#da532c" name="msapplication-TileColor">
-    <meta content="#ffffff" name="theme-color">
-
-    <!--    Favicon -->
-    <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
-    <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
-    <link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
-    <link href="/site.webmanifest" rel="manifest">
-    <link href="/favicon-32x32.png" rel="shortcut icon" type="image/x-icon">
-
-    <!-- Bootstrap & CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<!--    <link href="/css/main.css" rel="stylesheet">-->
-    <link href="/css/styles-merge.css" rel="stylesheet">
-<!--    <link id="dark-theme-style" rel="stylesheet"/>-->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="bosh-code.github.io Index" name="description">
+    <meta content="Ryan Bosher" name="author">
+    <link href="/assets/img/favicons/favicon.ico" rel="icon">
 
     <title>Index</title>
-    <meta content="bosh-code.io Index Page" name="description">
-    <meta content="Ryan Bosher" name="author">
+
+    <!-- Bootstrap core CSS & JQuery-->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Custom styles -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/dark.css" rel="stylesheet">
 </head>
-
 <body>
-
-<header>
-    <!--    Placeholder -->
-</header>
-<main class="container">
-    <div class="jumbotron title-margin">
-        <div class="row">
-            <h1 class="display-4 blue-text col-10">bosh-code.github.io</h1>
-            <!-- darkmode toggle -->
-            <div class="dark-mode-button-box">
-                <a class="btn btn-outline-info btn-md ml-auto font-weight-bold col-sm"
-                   href="javascript:void(0)"
-                   id="theme-toggler"
-                   onclick="toggleTheme()">"placeholder"</a>
+<div class="container" id="top">
+    <div id="header-placeholder"></div>
+    <div class="jumbotron p-3 p-md-5 text-white rounded-5rem bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">Margin, Border & Padding in CSS</h1>
+            <p class="lead my-3">This blog post explores the difference between the margin, border and padding
+                properties of elements in CSS as well as the Box Model.</p>
+            <p class="lead mb-0"><a class="text-white font-weight-bold" href="/src/pages/posts/html-css.html">Continue
+                reading...</a></p>
+        </div>
+    </div>
+    <section id="featured-content">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Sprint 1</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="/src/pages/posts/html-css.html">Margin, Border & Padding in
+                                CSS</a>
+                        </h3>
+                        <div class="mb-1 text-muted">April 14</div>
+                        <p class="card-text mb-auto">Simple descriptions of the properties with some examples.</p>
+                        <a href="/src/pages/posts/html-css.html">Continue reading</a>
+                    </div>
+                    <img alt="Card image cap" class="card-img-right flex-auto d-none d-md-block"
+                         data-src="holder.js/200x250?theme=thumb" src="/assets/img/thumbnails/html-css.png">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card flex-md-row mb-4 box-shadow">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-primary">Sprint 1</strong>
+                        <h3 class="mb-0">
+                            <a class="text-dark" href="/src/pages/posts/identity-values.html">Identity & Values</a>
+                        </h3>
+                        <div class="mb-1 text-muted">April 15</div>
+                        <p class="card-text mb-auto">A short write up on my personal traits and experiences.</p>
+                        <a href="/src/pages/posts/identity-values.html">Continue reading</a>
+                    </div>
+                    <img alt="Card image cap" class="card-img-right flex-auto d-none d-md-block"
+                         data-src="holder.js/200x250?theme=thumb" src="/assets/img/thumbnails/auckland-dark.png">
+                </div>
             </div>
         </div>
-        <p class="lead">"Landing Page"</p>
-        <hr class="my-4">
-        <p>Buttons for pages</p>
-        <p class="lead">
-            <a class="btn btn-primary btn-lg" href="blog/index-blog.html" role="button">Blog</a>
-            <a class="btn btn-secondary btn-lg" href="blog/html-css.html" role="button">HTML CSS</a>
-        </p>
+    </section>
+</div>
+<main class="container" role="main">
+    <div class="row">
+        <div class="col-md-8 blog-main">
+            <h3 class="pb-3 mb-4 font-italic border-bottom">Recent Blog Post Snippet</h3>
+            <p><em>To view the entire article, click the title.</em></p>
+            <div class="blog-post">
+                <div class="jumbotron p-md-4 mb-2 rounded-5rem bg-dark">
+                    <div class="col px-0">
+                        <h2 class="blog-post-title"><a class="text-white" href="/src/pages/posts/html-css.html">Margin,
+                            Border & Padding in CSS</a></h2>
+                    </div>
+                </div>
+                <p class="blog-post-meta">April 14, 2021 by <a href="#">Ryan</a></p>
+                <p>This blog post explores the difference between the margin, border and padding properties of elements
+                    in CSS as well as the Box Model.</p>
+                <hr>
+                <p>Margin, Border & Padding are all CSS <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">properties</a>, that change
+                    how elements are positioned and interact with others on a webpage.
+                    The three properties behave in similar ways and are often confused, however they function in
+                    distinct ways. Margin, Border & Padding combined are referred to as the
+                    "<a href="https://www.w3schools.com/css/css_boxmodel.asp">CSS Box Model</a>", or <strong>Box
+                        model</strong>
+                    for short.</p>
+                <section id="margin">
+                    <h3>Margin</h3>
+                    <div class="row ml-1">
+                        <img alt="Margin Example" class="col blog-image rounded-5rem"
+                             src="/assets/img/svg/examples/margin-example.svg">
+                    </div>
+                    <p>Margins clear an area outside the border and are always transparent. Margins can be thought of
+                        as the space between the border of one element and the next.</p>
+                    <p>Four margins need to be declared if
+                        they are not to collapse onto each other:</p>
+                    <ul>
+                        <li><code>margin-top: x;</code></li>
+                        <li><code>margin-right: x;</code></li>
+                        <li><code>margin-bottom: x;</code></li>
+                        <li><code>margin-left: x;</code></li>
+                    </ul>
+                    <p>Margin properties are usually defined in a clockwise order, starting from the top and moving
+                        around
+                        the element.<br>Margins can also be defined with shorthand. This condenses the 4 margin
+                        properties
+                        onto a
+                        single line, which is written as:</p>
+                    <ul>
+                        <li><code>margin: x x x x;</code></li>
+                    </ul>
+                    <p>The 4 values following the margin follow the clockwise order of margins.</p>
+                    <p><em>To learn more about margin properties, go <a
+                            href="https://www.smashingmagazine.com/2019/07/margins-in-css/">here</a>.</em></p>
+                </section>
+            </div>
+            <nav aria-label="pagination-buttons" class="blog-pagination">
+                <a class="btn btn-outline-primary" href="#top">Back to top</a>
+            </nav>
+        </div>
+        <aside class="col-md-4 blog-sidebar">
+            <div class="p-3 mb-3 bg-light rounded-5rem">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0">Hi 👋&ensp;I'm Ryan. I'm a computer science graduate learning Web Development.</p>
+            </div>
+            <div class="p-3">
+                <h4 class="font-italic">Elsewhere</h4>
+                <ol class="list-unstyled">
+                    <li><a href="https://github.com/bosh-code">GitHub</a></li>
+                </ol>
+            </div>
+        </aside>
     </div>
 </main>
-<footer>
-    <!--    Placeholder-->
-</footer>
-
-<!--Darkmode toggler-->
-<script src="javascript/dark-mode.js"></script>
+<div id="footer-placeholder"></div>
+<section id="scripts">
+    <script src="/assets/js/vendor/popper.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/holder.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap4-toggle.min.js"></script>
+    <script>
+		Holder.addTheme('thumb', {
+			bg: '#55595c',
+			fg: '#eceeef',
+			text: 'Thumbnail'
+		});
+    </script>
+    <script>
+		$(function () {
+			$("#header-placeholder").load("/src/components/header.html");
+		});
+    </script>
+    <script>
+		$(function () {
+			$("#footer-placeholder").load("/src/components/footer.html");
+		});
+    </script>
+</section>
 </body>
 </html>
