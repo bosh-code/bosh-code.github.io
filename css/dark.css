@@ -2233,4 +2233,18 @@
 	.blog-css-padding-example-shorthand {
 		padding: 1rem 1.5rem 1rem .8rem;
 	}
+
+	.tag {
+		padding-top: .06rem;
+		padding-right: .28rem;
+		padding-left: .28rem;
+		padding-bottom: .16rem;
+		background: rgba(8, 161, 241, 0.16);
+		border-radius: .5rem;
+	}
+
+	.fas {
+		font-size: smaller;
+		display: inline;
+	}
 }
