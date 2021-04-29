@@ -2194,6 +2194,15 @@
 		color: rgb(213, 213, 213);
 	}
 
+	.blog-image {
+		margin-bottom: 1rem;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.adaptive-image {
+		filter: brightness(70%)
+	}
 
 	.blog-css-example-content {
 		margin-bottom: 1rem;
