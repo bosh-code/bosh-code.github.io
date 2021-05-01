@@ -18,6 +18,8 @@
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/ae66a4a154.js"></script>
     <link href="/css/blog.css" rel="stylesheet">
     <link href="/css/dark.css" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css" rel="stylesheet">
+    <link href="/css/atom-one-light.css" rel="stylesheet">
 </head>
 <body>
 
@@ -32,10 +34,40 @@
                     </div>
                 </div>
                 <p class="blog-post-meta">April 23, 2021 by <a href="#main">Ryan</a></p>
-                <p>How I plan to manage my learning, both independently and during group learning.</p>
+                <p>The Javascript & supporting tools I learnt during sprint 3</p>
                 <hr>
-                <section id="intro">
-                    
+                <section id="control-flow">
+                    <h3>Control flow graphs</h3>
+                    <p>An example control flow graph about making press coffee</p>
+                    <div class="row ml-1 mb-2 mh-75">
+                        <img alt="Margin Example" class="col-md-5 blog-image rounded-5rem image-75"
+                             src="/assets/img/png/control-flow.png">
+                        <div class="col mb-1">
+                            <p>In this example control flow graph we can multiple examples of control flow logic. For
+                                example,
+                                <code>if</code> there is enough coffee, we continue,
+                                <code>else</code> we grind more coffee.
+                                We can write this in <em>pseudocode</em> as:<br>
+                            <pre><code
+                                    class="language-javascript rounded-5rem">if (coffeeAmount < amountRequired) {<br>&emsp;grind more<br>} else { <br>&emsp;continue<br>}<br></code></pre>
+                            If we look further into the "grind more" block, we can see this can be written as a <code>while</code>
+                            loop:<br>
+                            <code>if (coffeeAmount < amountRequired) {<br>
+                                &emsp;while (coffeeAmount < amountRequired) {<br>
+                                &emsp;&emsp;grindMore();<br>
+                                &emsp;&emsp;coffeeAmount++;<br>
+                                &emsp;}<br>
+                                }<br>
+                        </div>
+                    </div>
+                    <p>More text</p>
+                    <ul>
+                        <li><code>margin-top: x;</code></li>
+                        <li><code>margin-right: x;</code></li>
+                        <li><code>margin-bottom: x;</code></li>
+                        <li><code>margin-left: x;</code></li>
+                    </ul>
+
                 </section>
                 <nav aria-label="pagination-buttons" class="blog-pagination">
                     <a class="btn btn-outline-secondary" href="/src/sprint-3/emotional-intelligence.html">Older</a>
@@ -50,6 +82,8 @@
     <script src="/assets/js/vendor/popper.min.js"></script>
     <script src="/dist/js/bootstrap.min.js"></script>
     <script src="/assets/js/vendor/bootstrap4-toggle.min.js"></script>
+    <script src="/assets/js/vendor/highlight.pack.js"></script>
+    <script>hljs.highlightAll();</script>
     <script>
 		$(function () {
 			$("#header-placeholder").load("/src/components/header.html");
