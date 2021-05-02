@@ -6,13 +6,10 @@
     <meta content="Javascript Fundamentals" name="description">
     <meta content="Ryan Bosher" name="author">
     <link href="/assets/img/favicons/favicon.ico" rel="icon">
-
     <title>Javascript Fundamentals</title>
-
     <!-- Bootstrap core CSS & JQuery-->
     <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
     <!-- Custom styles -->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/ae66a4a154.js"></script>
@@ -22,7 +19,6 @@
     <link href="/css/atom-one-light.css" rel="stylesheet">
 </head>
 <body>
-
 <div class="container" id="top">
     <div id="header-placeholder"></div>
     <main class="container" id="main" role="main">
@@ -39,12 +35,15 @@
                 <section id="html-css">
                     <h3>HTML vs CSS</h3>
                     <p>HTML & CSS are two vital web technologies, that are used in combination, however achieve
-                        different thins. An analogy of the difference between the two would be:</p>
+                        different thins. An analogy of the difference between the two would be:
+                    </p>
                     <p>HTML is like a skeleton you have raised from the dead. The bones of the skeleton are all the
-                        HTML elements you add like:</p>
+                        HTML elements you add like:
+                    </p>
                     <ul>
                         <li>The <code>head</code> & <code>header</code> are the "brain" and skull</li>
-                        <li>Then the <code>body</code> is the torso the entire body or "content"
+                        <li>
+                            Then the <code>body</code> is the torso the entire body or "content"
                             <ul>
                                 <li>Arms can be <code>lists</code> and <code>images</code> are the legs etc...</li>
                             </ul>
@@ -54,7 +53,8 @@
                     <p>After assembling the skeleton back to life, we use CSS to give it features and clothes. With CSS
                         we can choose how big or small each body part should be, the colour of it's clothes & shoes and
                         everything else. CSS is loaded after the HTML, then applied, almost like dressing up the
-                        skeleton after raising it, except very quickly.</p>
+                        skeleton after raising it, except very quickly.
+                    </p>
                 </section>
                 <section id="control-flow">
                     <h3>Control flow - If & Loops</h3>
@@ -72,14 +72,17 @@
                                     class="language-javascript rounded-5rem">if (coffeeAmount < amountRequired) {<br>&emsp;grind more<br>} else { <br>&emsp;continue<br>}<br></code></pre>
                             <p>Basically this code block says if the coffeeAmount <em>condition</em> is true, then grind
                                 more. So if the amount of ground coffee is less than the amount required, then grind
-                                more.</p>
+                                more.
+                            </p>
                             <p>If we look further into the "grind more" block, we can see this can be written as a
-                                <code>while</code> loop:<br></p>
+                                <code>while</code> loop:<br>
+                            </p>
                             <pre><code class="language-javascript rounded-5rem">if (coffeeAmount < amountRequired) {<br>&emsp;while (coffeeAmount < amountRequired) {<br>&emsp;&emsp;grindMore();<br>&emsp;&emsp;++coffeeAmount;<br>&emsp;}<br>}<br></code></pre>
                             <p>This while loop will first check the condition, contained in the <code>(round
                                 brackets)</code>. We say <em>while</em> this condition is true, it will <em>execute</em>
                                 the code in the body of the loop repeatedly until the condition is false. Loops that
-                                have an <em>always true</em> condition will repeat infinitely.</p>
+                                have an <em>always true</em> condition will repeat infinitely.
+                            </p>
                         </div>
                         <img alt="Margin Example" class="col-md-5 blog-image rounded-5rem image-75"
                              src="/assets/img/png/control-flow.png">
@@ -95,40 +98,41 @@
                         <code>for (let i = count; i > 0; --i)</code> and creates the variable <code>i</code> with the
                         value of <strong>count</strong>. Next it checks if <code
                         >i</code> is greater ( <code>></code> operator ) than <code>0</code> and declares <code>i</code>
-                        is to become <code>i - 1</code> after each successful run through the loop.</p>
+                        is to become <code>i - 1</code> after each successful run through the loop.
+                    </p>
                     <p>The the body of the loop just runs through printing out the song, changing the bottles noun based
                         on whether it's the last or second to last loop through. An example of the output of the code
-                        looks like this:<br></p>
+                        looks like this:<br>
+                    </p>
                     <pre><code class="language-javascript rounded-5rem">/**<br>2 bottles of beer on the wall,<br>2 bottles of beer,<br>Take one down, pass it around, 1 bottle of beer on the wall.<br>**/</code></pre>
                 </section>
-
                 <section id="the-html-dom">
                     <h3>The HTML DOM & Interactions</h3>
                     <p><em>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows
                         programs and scripts to dynamically access and update the content, structure, and style of a
-                        document."</em></p>
+                        document."</em>
+                    </p>
                     <p>The HTML DOM or "Document Object Model" is a standard for how to get, change, add, or delete HTML
                         elements. We can use Javascript or other programming languages to access the
                         <strong>methods</strong> and <strong>properties</strong> of the DOM.
                         For example, changing the text in an html <code>&#60;p&#62;</code> or paragraph element, using
                         the HTML DOM requires using the <code>.getElementById()</code> method to access the <code>.innerHTML</code>
-                        property. We can write this in Javascript as:</p>
+                        property. We can write this in Javascript as:
+                    </p>
                     <pre><code class="language-javascript rounded-5rem">&#60;script&#62;<br>document.getElementById("foo").innerHTML = "Hello World";<br>&#60;script&#62;</code></pre>
                     <p>The HTML DOM has numerous <strong>methods</strong> and <strong>properties</strong> for
                         interacting with elements. You can see large list, as well as explanations <a
-                                href="https://www.w3schools.com/js/js_htmldom.asp">at this link.</a></p>
+                                href="https://www.w3schools.com/js/js_htmldom.asp">at this link.</a>
+                    </p>
                 </section>
-
                 <section id="arrays-vs-objects">
                     <h3>Accessing data from Arrays vs Objects</h3>
                     <p>Objects</p>
                 </section>
-
                 <section id="functions">
                     <h3>Functions & Why</h3>
                     <p>Functions</p>
                 </section>
-
                 <nav aria-label="pagination-buttons" class="blog-pagination">
                     <a class="btn btn-outline-secondary" href="/src/sprint-3/emotional-intelligence.html">Older</a>
                     <a class="btn btn-outline-primary disabled">Newer</a>
@@ -148,11 +152,13 @@
 		$(function () {
 			$("#header-placeholder").load("/src/components/header.html");
 		});
+
     </script>
     <script>
 		$(function () {
 			$("#footer-placeholder").load("/src/components/footer.html");
 		});
+
     </script>
 </section>
 </body>
