@@ -36,39 +36,99 @@
                 <p class="blog-post-meta">April 23, 2021 by <a href="#main">Ryan</a></p>
                 <p>The Javascript & supporting tools I learnt during sprint 3</p>
                 <hr>
+                <section id="html-css">
+                    <h3>HTML vs CSS</h3>
+                    <p>HTML & CSS are two vital web technologies, that are used in combination, however achieve
+                        different thins. An analogy of the difference between the two would be:</p>
+                    <p>HTML is like a skeleton you have raised from the dead. The bones of the skeleton are all the
+                        HTML elements you add like:</p>
+                    <ul>
+                        <li>The <code>head</code> & <code>header</code> are the "brain" and skull</li>
+                        <li>Then the <code>body</code> is the torso the entire body or "content"
+                            <ul>
+                                <li>Arms can be <code>lists</code> and <code>images</code> are the legs etc...</li>
+                            </ul>
+                        </li>
+                        <li>Then the <code>footer</code> for the feet</li>
+                    </ul>
+                    <p>After assembling the skeleton back to life, we use CSS to give it features and clothes. With CSS
+                        we can choose how big or small each body part should be, the colour of it's clothes & shoes and
+                        everything else. CSS is loaded after the HTML, then applied, almost like dressing up the
+                        skeleton after raising it, except very quickly.</p>
+                </section>
                 <section id="control-flow">
-                    <h3>Control flow graphs</h3>
+                    <h3>Control flow - If & Loops</h3>
                     <p>An example control flow graph about making press coffee</p>
-                    <div class="row ml-1 mb-2 mh-75">
-                        <img alt="Margin Example" class="col-md-5 blog-image rounded-5rem image-75"
-                             src="/assets/img/png/control-flow.png">
+                    <div class="row mr-1 mb-2 mh-75">
                         <div class="col mb-1">
                             <p>In this example control flow graph we can multiple examples of control flow logic. For
                                 example,
-                                <code>if</code> there is enough coffee, we continue,
-                                <code>else</code> we grind more coffee.
-                                We can write this in <em>pseudocode</em> as:<br>
+                                <code>if</code> there is not enough coffee, we grind more,
+                                <code>else</code> we exit the statement.
+                            <p><em>If there is no code in the <code>else</code> body, we can omit the keyword and body.</em>
+                            </p>
+                            <p>We can write this in <em>pseudocode</em> as:<br></p>
                             <pre><code
                                     class="language-javascript rounded-5rem">if (coffeeAmount < amountRequired) {<br>&emsp;grind more<br>} else { <br>&emsp;continue<br>}<br></code></pre>
-                            If we look further into the "grind more" block, we can see this can be written as a <code>while</code>
-                            loop:<br>
-                            <code>if (coffeeAmount < amountRequired) {<br>
-                                &emsp;while (coffeeAmount < amountRequired) {<br>
-                                &emsp;&emsp;grindMore();<br>
-                                &emsp;&emsp;coffeeAmount++;<br>
-                                &emsp;}<br>
-                                }<br>
+                            <p>Basically this code block says if the coffeeAmount <em>condition</em> is true, then grind
+                                more. So if the amount of ground coffee is less than the amount required, then grind
+                                more.</p>
+                            <p>If we look further into the "grind more" block, we can see this can be written as a
+                                <code>while</code> loop:<br></p>
+                            <pre><code class="language-javascript rounded-5rem">if (coffeeAmount < amountRequired) {<br>&emsp;while (coffeeAmount < amountRequired) {<br>&emsp;&emsp;grindMore();<br>&emsp;&emsp;++coffeeAmount;<br>&emsp;}<br>}<br></code></pre>
+                            <p>This while loop will first check the condition, contained in the <code>(round
+                                brackets)</code>. We say <em>while</em> this condition is true, it will <em>execute</em>
+                                the code in the body of the loop repeatedly until the condition is false. Loops that
+                                have an <em>always true</em> condition will repeat infinitely.</p>
                         </div>
+                        <img alt="Margin Example" class="col-md-5 blog-image rounded-5rem image-75"
+                             src="/assets/img/png/control-flow.png">
                     </div>
-                    <p>More text</p>
-                    <ul>
-                        <li><code>margin-top: x;</code></li>
-                        <li><code>margin-right: x;</code></li>
-                        <li><code>margin-bottom: x;</code></li>
-                        <li><code>margin-left: x;</code></li>
-                    </ul>
-
                 </section>
+                <section id="for-loops">
+                    <h3>For Loops</h3>
+                    <p>An example for loop:</p>
+                    <pre><code class="language-javascript rounded-5rem">for (let i = count; i > 0; --i) {<br>&emsp;let noun = i === 1 ? "bottle" : "bottles";<br>&emsp;console.log(i + " " + noun + " of beer on the wall,");<br>&emsp;console.log(i + " " + noun + " of beer,");<br>&emsp;noun = i - 1 === 1 ? "bottle" : "bottles";<br>&emsp;console.log("Take one down, pass it around, " + (i - 1) + " " + noun + " of beer on the wall.\n")<br>}<br></code></pre>
+                    <p>This for loop takes in a <code>parameter</code> <strong>count</strong> and prints the <em>"99
+                        bottles of beer on
+                        the wall"</em> song, descending to 0 from the original count. First, it checks the condition
+                        <code>for (let i = count; i > 0; --i)</code> and creates the variable <code>i</code> with the
+                        value of <strong>count</strong>. Next it checks if <code
+                        >i</code> is greater ( <code>></code> operator ) than <code>0</code> and declares <code>i</code>
+                        is to become <code>i - 1</code> after each successful run through the loop.</p>
+                    <p>The the body of the loop just runs through printing out the song, changing the bottles noun based
+                        on whether it's the last or second to last loop through. An example of the output of the code
+                        looks like this:<br></p>
+                    <pre><code class="language-javascript rounded-5rem">/**<br>2 bottles of beer on the wall,<br>2 bottles of beer,<br>Take one down, pass it around, 1 bottle of beer on the wall.<br>**/</code></pre>
+                </section>
+
+                <section id="the-html-dom">
+                    <h3>The HTML DOM & Interactions</h3>
+                    <p><em>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows
+                        programs and scripts to dynamically access and update the content, structure, and style of a
+                        document."</em></p>
+                    <p>The HTML DOM or "Document Object Model" is a standard for how to get, change, add, or delete HTML
+                        elements. We can use Javascript or other programming languages to access the
+                        <strong>methods</strong> and <strong>properties</strong> of the DOM.
+                        For example, changing the text in an html <code>&#60;p&#62;</code> or paragraph element, using
+                        the HTML DOM requires using the <code>.getElementById()</code> method to access the <code>.innerHTML</code>
+                        property. We can write this in Javascript as:</p>
+                    <pre><code class="language-javascript rounded-5rem">&#60;script&#62;<br>document.getElementById("foo").innerHTML = "Hello World";<br>&#60;script&#62;</code></pre>
+                    <p>The HTML DOM has numerous <strong>methods</strong> and <strong>properties</strong> for
+                        interacting with elements. You can see large list, as well as explanations <a
+                                href="https://www.w3schools.com/js/js_htmldom.asp">at this link.</a></p>
+                </section>
+
+                <section id="arrays-vs-objects">
+                    <h3>Accessing data from Arrays vs Objects</h3>
+                    <p>Objects</p>
+                </section>
+
+                <section id="functions">
+                    <h3>Functions & Why</h3>
+                    <p>Functions</p>
+                </section>
+
                 <nav aria-label="pagination-buttons" class="blog-pagination">
                     <a class="btn btn-outline-secondary" href="/src/sprint-3/emotional-intelligence.html">Older</a>
                     <a class="btn btn-outline-primary disabled">Newer</a>

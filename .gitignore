@@ -246,3 +246,5 @@ tmp/
 temp/
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+/scratch/
+/assets/img/favicons/favicon.ico
