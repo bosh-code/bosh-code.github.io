@@ -30,10 +30,41 @@
                     </div>
                 </div>
                 <p class="blog-post-meta">May 3rd, 2021 by <a href="#main">Ryan</a></p>
-                <p>The Javascript & supporting tools I learnt during sprint 3</p>
+                <p>Fizz buzz example that runs a javascript file and updates </p>
                 <hr>
-                <section id="intro">
-                    <div class="row mr-1 mb-2 mh-75">
+                <section id="code">
+                    <h3>Fizz buzz example code</h3>
+                    <p>This is the code in fizzbuzz.js that runs when the submit button below is clicked.</p>
+<pre><code class="language-javascript rounded-5rem">function fizzbuzz(num) {
+  document.getElementById("result").innerHTML = "" // clear the paragraph first
+  if (num < 3 || num > 200 ) {
+    document.getElementById("result").innerHTML = "// number must be between 3 - 200" // hacky validation
+  } else {
+    for (let i = num; i > 0; i--) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        append('FizzBuzz');
+      } else if (i % 3 === 0) {
+        append('Fizz');
+      } else if (i % 5 === 0) {
+        append('Buzz');
+      } else {
+        append(i);
+      }
+    }
+  }
+}
+
+function append(textToAppend) {
+  let paragraph = document.getElementById("result"); // get the paragraph
+  let text = document.createTextNode("// " + textToAppend); // get the text to append to the paragraph
+  let linebreak = document.createElement("br"); // create a linebreak to append
+  paragraph.appendChild(text); // append text
+  paragraph.appendChild(linebreak); // append linebreak
+}
+</code></pre>
+                </section>
+                <section id="demo">
+                    <div class="row mb-2 mh-75">
                         <div class="col mb-1">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
@@ -44,19 +75,14 @@
                                 <input type="number" class="form-control" value="15" aria-label="submit-btn"
                                        aria-describedby="btn" id="num" name="number-input" required>
                             </div>
-                            <p><em>There is no form validation here, so be careful.</em></p>
+                            <p><em>There is no real form validation here, so <strong>be careful</strong>.</em></p>
                         </div>
                         <div class="col mb-1">
                             <pre><code id="result"
-                                       class="language-javascript rounded-5rem">// output here<br></code></pre>
+                                       class="rounded-5rem hljs-comment">// output here<br></code></pre>
                         </div>
                     </div>
                     <hr>
-                </section>
-
-
-                <section id="example">
-
                 </section>
                 <nav aria-label="pagination-buttons" class="blog-pagination">
                     <a class="btn btn-outline-secondary" href="/src/sprint-3/js-fundamentals.html">Older</a>
