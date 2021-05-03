@@ -127,11 +127,55 @@
                 </section>
                 <section id="arrays-vs-objects">
                     <h3>Accessing data from Arrays vs Objects</h3>
-                    <p>Objects</p>
+                    <h4>Objects</h4>
+                    <p>An object's <strong>properties</strong> consist of a <strong>key</strong> and
+                        <strong>value</strong> pair. An example of this basic syntax is:</p>
+                    <pre><code
+                            class="language-javascript rounded-5rem">var object = {<br>&emsp;key: 'value'<br>};
+                    </code></pre>
+                    <p>An object's <strong>properties</strong> can be accessed, added, removed or
+                        <strong>mutated</strong> by accessing them through Javascript's <em>dot</em> or
+                        <em>brackets</em> notation:</p>
+                    <pre><code
+                            class="language-javascript rounded-5rem">var person = {<br>&emsp;name: 'Ryan',<br>&emsp;age: '25'<br>};<br>person.name = "Ryan Bosher"; /** dot notation mutation **/<br>var tempAge = person['age']; /** bracket notation accessing **/
+                    </code></pre>
+                    <h4>Arrays</h4>
+                    <p>Arrays are used to store multiple <em>values</em> in one <strong>variable</strong>. Instead of
+                        being key-value paired like objects, Arrays use <strong>indexing</strong>, beginning at
+                        <em>0</em>. We can assign some values to an array like this:</p>
+                    <pre><code class="language-javascript rounded-5rem">var strings = ['foo', 'bar'];</code></pre>
+                    <p>To access a variable from the array, we can access it through brackets notations:</p>
+                    <pre><code class="language-javascript rounded-5rem">strings[0]; // returns 'foo'</code></pre>
+                    <p>Arrays also have built-in methods for <strong>adding</strong>, <strong>removing</strong> and
+                        <strong>shifting</strong> elements.</p>
+                    <pre><code class="language-javascript rounded-5rem">/** push() - Adds item(s) to the end of an array **/<br>strings.push('far');<br>/** pop() - Removes the last item of an array **/<br>strings.pop();<br>/** shift() - Removes the first item of an array **/<br>strings.shift();<br>/** unshift() - Adds item(s) to the front of an array **/<br>strings.unshift('boo');<br></code></pre>
                 </section>
                 <section id="functions">
                     <h3>Functions & Why</h3>
-                    <p>Functions</p>
+                    <p>A function is just a block of Javascript code designed to perform a specific task. They are
+                        defined with the <code>function</code> keyword. A function is <strong>executed</strong> when
+                        <strong>called</strong> or <strong>invoked</strong>. An example function is as follows:</p>
+                    <pre><code class="language-javascript rounded-5rem">function example(p1, p2) {<br>&emsp;return p1 * p2;<br>} // This function returns the product of p1 * p2</code></pre>
+                    <ul>
+                        <li><code>function</code> is the keyword to declare a function.</li>
+                        <li><code>example</code> is the name of the function and what we use to call it.</li>
+                        <li><code>(p1, p2)</code> are the parameters of the function, or what is <em>passed</em> in.
+                        </li>
+                        <li><code>return</code> is the keyword used to return a product from the function to the calling
+                            code.
+                        </li>
+                    </ul>
+                    <p>Invoking this function and the result can be seen here:</p>
+                    <pre><code class="language-javascript rounded-5rem">function multiplyExample(p1, p2) {<br>&emsp;return p1 * p2;<br>}<br><br>var x = multiplyExample(4, 3); // x will hold 12
+                    </code></pre>
+                    <h4>But why?</h4>
+                    <p>Instead of making the function above, we can just write 4 * 3 in it's place. But what if instead
+                        of 4 * 3 we were converting a temperature from Celsius to Fahrenheit, then we needed to do it 10
+                        times. We could just write out <code>x = (5/9) * (x-32)</code> 10 times throughout our code,
+                        however this would become unwieldy very quickly.</p>
+                    <p>With functions we can <strong>declare once</strong> and <strong>use it forever</strong>. We can
+                        declare a function that does our temperature conversion and just call it whenever we need to.
+                        Our code will be simpler and smaller.</p>
                 </section>
                 <nav aria-label="pagination-buttons" class="blog-pagination">
                     <a class="btn btn-outline-secondary" href="/src/sprint-3/emotional-intelligence.html">Older</a>
