@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="Fizz Buzz JS Example" name="description">
+    <meta content="Ryan Bosher" name="author">
+    <link href="/assets/img/favicons/favicon.ico" rel="icon">
+    <title>Fizz Buzz</title>
+    <!-- Bootstrap core CSS & JQuery-->
+    <link href="/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom styles -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/ae66a4a154.js"></script>
+    <link href="/css/blog.css" rel="stylesheet">
+    <link href="/css/dark.css" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css" rel="stylesheet">
+    <link href="/css/atom-one-light.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" id="top">
+    <div id="header-placeholder"></div>
+    <main class="container" id="main" role="main">
+        <div class="blog-main m-2">
+            <div class="blog-post">
+                <div class="jumbotron p-md-4 mb-2 text-white rounded-5rem bg-dark">
+                    <div class="col px-0">
+                        <h2 class="blog-post-title">Fizz Buzz</h2>
+                    </div>
+                </div>
+                <p class="blog-post-meta">May 3rd, 2021 by <a href="#main">Ryan</a></p>
+                <p>The Javascript & supporting tools I learnt during sprint 3</p>
+                <hr>
+                <section id="intro">
+                    <div class="row mr-1 mb-2 mh-75">
+                        <div class="col mb-1">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <button class="btn btn-outline-primary" type="button"
+                                            onclick="fizzbuzz(document.getElementById('num').value)">Submit
+                                    </button>
+                                </div>
+                                <input type="number" class="form-control" value="15" aria-label="submit-btn"
+                                       aria-describedby="btn" id="num" name="number-input" required>
+                            </div>
+                            <p><em>There is no form validation here, so be careful.</em></p>
+                        </div>
+                        <div class="col mb-1">
+                            <pre><code id="result"
+                                       class="language-javascript rounded-5rem">// output here<br></code></pre>
+                        </div>
+                    </div>
+                    <hr>
+                </section>
+
+
+                <section id="example">
+
+                </section>
+                <nav aria-label="pagination-buttons" class="blog-pagination">
+                    <a class="btn btn-outline-secondary" href="/src/sprint-3/js-fundamentals.html">Older</a>
+                    <a class="btn btn-outline-primary" href="/src/sprint-4/neuroplasticity.html">Newer</a>
+                </nav>
+            </div>
+        </div>
+    </main>
+</div>
+<div id="footer-placeholder"></div>
+<section id="scripts">
+    <script src="/assets/js/vendor/popper.min.js"></script>
+    <script src="/dist/js/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap4-toggle.min.js"></script>
+    <script src="/assets/js/vendor/highlight.pack.js"></script>
+    <script src="/src/js/fizzbuzz.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
+    <script>
+      $(function () {
+        $('#header-placeholder').load('/src/components/header.html')
+      })
+
+    </script>
+    <script>
+      $(function () {
+        $('#footer-placeholder').load('/src/components/footer.html')
+      })
+
+    </script>
+</section>
+</body>
+</html>
