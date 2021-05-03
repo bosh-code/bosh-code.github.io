@@ -1,14 +1,18 @@
 function fizzbuzz(num) {
   document.getElementById("result").innerHTML = "" // clear the paragraph first
-  for (let i = num; i > 0; i--) {
-    if (i % 3 === 0 && i % 5 === 0) {
-      append('FizzBuzz');
-    } else if (i % 3 === 0) {
-      append('Fizz');
-    } else if (i % 5 === 0) {
-      append('Buzz');
-    } else {
-      append(i);
+  if (num < 3 || num > 200 ) {
+    document.getElementById("result").innerHTML = "// number must be between 3 - 200" // hacky validation
+  } else {
+    for (let i = num; i > 0; i--) {
+      if (i % 3 === 0 && i % 5 === 0) {
+        append('FizzBuzz');
+      } else if (i % 3 === 0) {
+        append('Fizz');
+      } else if (i % 5 === 0) {
+        append('Buzz');
+      } else {
+        append(i);
+      }
     }
   }
 }
