@@ -30,12 +30,13 @@
                     </div>
                 </div>
                 <p class="blog-post-meta">May 3rd, 2021 by <a href="#main">Ryan</a></p>
-                <p>Fizz buzz example that runs a javascript file and updates </p>
+                <p>Fizz buzz example that runs a javascript file and updates a <code>&#60;p&#62;</code> with the output.
+                </p>
                 <hr>
                 <section id="code">
                     <h3>Fizz buzz example code</h3>
                     <p>This is the code in fizzbuzz.js that runs when the submit button below is clicked.</p>
-<pre><code class="language-javascript rounded-5rem">function fizzbuzz(num) {
+                    <pre><code class="language-javascript rounded-5rem">function fizzbuzz(num) {
   document.getElementById("result").innerHTML = "" // clear the paragraph first
   if (num < 3 || num > 200 ) {
     document.getElementById("result").innerHTML = "// number must be between 3 - 200" // hacky validation
@@ -53,8 +54,9 @@
     }
   }
 }
+</code></pre>
 
-function append(textToAppend) {
+<pre><code class="language-javascript rounded-5rem">function append(textToAppend) {
   let paragraph = document.getElementById("result"); // get the paragraph
   let text = document.createTextNode("// " + textToAppend); // get the text to append to the paragraph
   let linebreak = document.createElement("br"); // create a linebreak to append
@@ -85,8 +87,8 @@ function append(textToAppend) {
                     <hr>
                 </section>
                 <nav aria-label="pagination-buttons" class="blog-pagination">
-                    <a class="btn btn-outline-secondary" href="/src/sprint-3/js-fundamentals.html">Older</a>
-                    <a class="btn btn-outline-primary" href="/src/sprint-4/neuroplasticity.html">Newer</a>
+                    <a class="btn btn-outline-secondary" href="/sprint-3fundamentals.html">Older</a>
+                    <a class="btn btn-outline-primary" href="/sprint-4roplasticity.html">Newer</a>
                 </nav>
             </div>
         </div>
