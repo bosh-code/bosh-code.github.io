@@ -30,7 +30,8 @@
                     </div>
                 </div>
                 <p class="blog-post-meta">April 23, 2021 by <a href="#main">Ryan</a></p>
-                <p>The Javascript & supporting tools I learnt during sprint 3 & <a href="https://github.com/bosh-code/DOM-applying-classes">Dom classes example</a></p>
+                <p>The Javascript & supporting tools I learnt during sprint 3 & <a
+                        href="https://github.com/bosh-code/DOM-applying-classes">Dom classes example</a></p>
                 <hr>
                 <section id="html-css">
                     <h3>HTML vs CSS</h3>
@@ -119,7 +120,7 @@
                         the HTML DOM requires using the <code>.getElementById()</code> method to access the <code>.innerHTML</code>
                         property. We can write this in Javascript as:
                     </p>
-                    <pre><code class="language-javascript rounded-5rem">&#60;script&#62;<br>document.getElementById("foo").innerHTML = "Hello World";<br>&#60;script&#62;</code></pre>
+                    <pre><code class="language-html rounded-5rem">&#60;script&#62;<br>document.getElementById("foo").innerHTML = "Hello World";<br>&#60;/script&#62;</code></pre>
                     <p>The HTML DOM has numerous <strong>methods</strong> and <strong>properties</strong> for
                         interacting with elements. You can see large list, as well as explanations <a
                                 href="https://www.w3schools.com/js/js_htmldom.asp">at this link.</a>
@@ -171,7 +172,8 @@
                     <h4>But why?</h4>
                     <p>Instead of making the function above, we can just write 4 * 3 in it's place. But what if instead
                         of 4 * 3 we were converting a temperature from Celsius to Fahrenheit, then we needed to do it 10
-                        times. We could just write out <code>x = (5/9) * (x-32)</code> 10 times throughout our code,
+                        times. We could just write out
+                        <code> var x = (5 / 9) * (x - 32)</code> 10 times throughout our code,
                         however this would become unwieldy very quickly.</p>
                     <p>With functions we can <strong>declare once</strong> and <strong>use it forever</strong>. We can
                         declare a function that does our temperature conversion and just call it whenever we need to.
@@ -191,17 +193,17 @@
     <script src="/dist/js/bootstrap.min.js"></script>
     <script src="/assets/js/vendor/bootstrap4-toggle.min.js"></script>
     <script src="/assets/js/vendor/highlight.pack.js"></script>
-    <script>hljs.highlightAll();</script>
+    <script>hljs.highlightAll()</script>
     <script>
-		$(function () {
-			$("#header-placeholder").load("/src/components/header.html");
-		});
+      $(function () {
+        $('#header-placeholder').load('/src/components/header.html')
+      })
 
     </script>
     <script>
-		$(function () {
-			$("#footer-placeholder").load("/src/components/footer.html");
-		});
+      $(function () {
+        $('#footer-placeholder').load('/src/components/footer.html')
+      })
 
     </script>
 </section>
