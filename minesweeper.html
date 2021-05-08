@@ -47,36 +47,33 @@
         </div>
     </div>
 </div>
-
-<div>
-    <div class="row">
-        <div class="col m-2">
-            <div class="game-settings">
-                <div class="slider-container row my-3 mx-1 text-center">
-                    <label class="col text-center" for="diff-slider">Difficulty</label>
-                    <div>
-                        <input class="slider" id="diff-slider" max="3" min="1" type="range" value="1">
-                    </div>
-                    <p class="col" id="diff-label"></p>
+<div class="row">
+    <div class="col m-2">
+        <div class="game-settings">
+            <div class="slider-container row my-3 mx-1 text-center">
+                <label class="col text-center" for="diff-slider">Difficulty</label>
+                <div>
+                    <input class="slider" id="diff-slider" max="3" min="1" type="range" value="1">
                 </div>
-                <div class="slider-container row my-3 mx-1 text-center">
-                    <label class="col text-center" for="size-slider">Board size</label>
-                    <div>
-                        <input class="slider" id="size-slider" max="3" min="1" type="range" value="1">
-                    </div>
-                    <p class="col" id="size-label"></p>
+                <p class="col" id="diff-label"></p>
+            </div>
+            <div class="slider-container row my-3 mx-1 text-center">
+                <label class="col text-center" for="size-slider">Board size</label>
+                <div>
+                    <input class="slider" id="size-slider" max="3" min="1" type="range" value="1">
                 </div>
-                <div class="button-container row my-3 mx-1">
-                    <div class="col">
-                        <button class="btn btn-primary" id="resetButton" onclick="resetGame()">Reset</button>
-                    </div>
+                <p class="col" id="size-label"></p>
+            </div>
+            <div class="button-container row my-3 mx-1">
+                <div class="col">
+                    <button class="btn btn-primary" id="resetButton" onclick="resetGame()">Reset</button>
                 </div>
             </div>
-            <p><em>This works on mobile, but I really don't recommend it</em></p>
         </div>
-        <div class="col m-2 board-container">
-            <div aria-label="board" class="board" data-long-press-delay="500" id="board"></div>
-        </div>
+        <p><em>This works on mobile, but I really don't recommend it</em></p>
+    </div>
+    <div class="col m-2 board-container">
+        <div aria-label="board" class="board" data-long-press-delay="500" id="board"></div>
     </div>
 </div>
 </body>
