@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-long-press-delay="500" class="notSelectable">
+<html class="notSelectable" data-long-press-delay="500" lang="en">
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
@@ -27,13 +27,13 @@
     </div>
 </header>
 
-<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="winModalLabel"
-     aria-hidden="true">
+<div aria-hidden="true" aria-labelledby="winModalLabel" class="modal fade" id="modal" role="dialog"
+     tabindex="-1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header" id="modal-header">
                 <h5 class="modal-title text-white" id="modal-title"><em class="fas fa-crown gold"></em> You win!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="resetGame()">
+                <button aria-label="Close" class="close" data-dismiss="modal" onclick="resetGame()" type="button">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -42,7 +42,7 @@
                 <p id="mines">There was </p>
             </div>
             <div class="modal-footer">
-                <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="resetGame()">Replay</button>
+                <button class="btn btn-primary" data-dismiss="modal" onclick="resetGame()" type="button">Replay</button>
             </div>
         </div>
     </div>
@@ -55,14 +55,14 @@
                 <div class="slider-container row my-3 mx-1 text-center">
                     <label class="col text-center" for="diff-slider">Difficulty</label>
                     <div>
-                        <input type="range" min="1" max="3" value="1" class="slider" id="diff-slider">
+                        <input class="slider" id="diff-slider" max="3" min="1" type="range" value="1">
                     </div>
                     <p class="col" id="diff-label"></p>
                 </div>
                 <div class="slider-container row my-3 mx-1 text-center">
                     <label class="col text-center" for="size-slider">Board size</label>
                     <div>
-                        <input type="range" min="1" max="3" value="1" class="slider" id="size-slider">
+                        <input class="slider" id="size-slider" max="3" min="1" type="range" value="1">
                     </div>
                     <p class="col" id="size-label"></p>
                 </div>
@@ -75,7 +75,7 @@
             <p><em>This works on mobile, but I really don't recommend it</em></p>
         </div>
         <div class="col m-2 board-container">
-            <div class="board" data-long-press-delay="500" id="board" aria-label="board"></div>
+            <div aria-label="board" class="board" data-long-press-delay="500" id="board"></div>
         </div>
     </div>
 </div>
