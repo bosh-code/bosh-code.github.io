@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" data-long-press-delay="500" class="notSelectable">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="Minesweeper in JS" name="description">
+    <meta content="Ryan Bosher" name="author">
+    <link href="/assets/img/favicons/favicon.ico" rel="icon">
+    <title>MinesweeperJS</title>
+    <!-- Bootstrap core CSS & JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Custom styles -->
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/ae66a4a154.js"></script>
+    <link href="/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/minesweeper.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+<!--    <h2 class="m-4"><a href="/index.html"><em class="fas fa-bomb"></em> MinesweeperJS</a></h2>-->
+    <div class="row flex-nowrap justify-content-between align-items-center m-4">
+        <div class="col text-center">
+            <a class="header-text text-dark" href="/index.html"><em class="fas fa-bomb"></em> MinesweeperJS</a>
+        </div>
+    </div>
+</header>
+
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="winModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header" id="modal-header">
+                <h5 class="modal-title text-white" id="modal-title"><em class="fas fa-crown gold"></em> You win!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="resetGame()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="time">You took </p>
+                <p id="mines">There was </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" data-dismiss="modal" class="btn btn-primary" onclick="resetGame()">Replay</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="row">
+        <div class="col m-2">
+            <div class="game-settings">
+                <div class="slider-container row my-3 mx-1 text-center">
+                    <label class="col text-center" for="diff-slider">Difficulty</label>
+                    <div>
+                        <input type="range" min="1" max="3" value="1" class="slider" id="diff-slider">
+                    </div>
+                    <p class="col" id="diff-label"></p>
+                </div>
+                <div class="slider-container row my-3 mx-1 text-center">
+                    <label class="col text-center" for="size-slider">Board size</label>
+                    <div>
+                        <input type="range" min="1" max="3" value="1" class="slider" id="size-slider">
+                    </div>
+                    <p class="col" id="size-label"></p>
+                </div>
+                <div class="button-container row my-3 mx-1">
+                    <div class="col">
+                        <button class="btn btn-primary" id="resetButton" onclick="resetGame()">Reset</button>
+                    </div>
+                </div>
+            </div>
+            <p><em>This works on mobile, but I really don't recommend it</em></p>
+        </div>
+        <div class="col m-2 board-container">
+            <div class="board" data-long-press-delay="500" id="board" aria-label="board"></div>
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+</footer>
+<script src="assets/js/vendor/long-press-event.min.js"></script>
+<script src="/src/js/lib.js"></script>
+<script src="/src/js/minesweeper.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+</html>
