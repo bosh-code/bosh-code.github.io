@@ -2265,4 +2265,25 @@
 		font-size: smaller;
 		display: inline;
 	}
+
+	.form-control {
+		display: block;
+		width: 100%;
+		padding: .375rem .75rem;
+		font-size: 1rem;
+		line-height: 1.5;
+		color: #bfbfbf;
+		background-color: #1c1c21;
+		background-clip: padding-box;
+		border: 1px solid #575757;
+		border-radius: .25rem;
+		transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+	}
+
+	.form-control:focus {
+		color: #bfbfbf;
+		background-color: #1c1c21;
+		background-clip: padding-box;
+		border: 1px solid #575757;
+	}
 }
