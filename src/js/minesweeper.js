@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', startGame)
-const TEST_MODE = true
+const TEST_MODE = false
 
 // Disable Selection
 $(document).ready(function () {
