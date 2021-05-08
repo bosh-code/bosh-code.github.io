@@ -29,152 +29,36 @@
                     </div>
                 </div>
                 <p class="blog-post-meta">May 1st, 2021 by <a href="#main">Ryan</a></p>
-                <p>The Javascript & supporting tools I learnt during sprint 3</p>
+                <p>Neuroplasticity, growth mindset & their influence on learning</p>
                 <hr>
-                <section id="html-css">
-                    <h3>HTML vs CSS</h3>
+                <section id="understanding">
+                    <h3>Understanding</h3>
+                    <p>Neuroplasticity is a general term for some complex things that happen in the brain. It's the
+                        ability of our neural networks to change, like neural pathways making new connections. For
+                        example, neuroplasticity changes can occur from some of the following:</p>
+                    <ul>
+                        <li>Learning new things and abilities</li>
+                        <li>Environmental and external influences</li>
+                        <li>Practicing a skill or task</li>
+                        <li>Stress</li>
+                    </ul>
+                    <p>Our brains remain <em>"plastic"</em> well into adulthood, meaning our ability to learn and
+                        practice is not lost as a child. A lot of research has been conducted into what learning is and
+                        how we learn, as well as ways to maximise our neuroplasticity. You can read more about that <a
+                                href="https://www.atlassian.com/blog/productivity/neuroplasticity-train-your-brain">here</a>.
+                    </p>
+                </section>
+                <section id="growth-mindset">
+                    <h3>The growth mindset</h3>
                     <p>HTML & CSS are two vital web technologies, that are used in combination, however achieve
                         different thins. An analogy of the difference between the two would be:
                     </p>
-                    <p>HTML is like a skeleton you have raised from the dead. The bones of the skeleton are all the
-                        HTML elements you add like:
-                    </p>
-                    <ul>
-                        <li>The <code>head</code> & <code>header</code> are the "brain" and skull</li>
-                        <li>
-                            Then the <code>body</code> is the torso the entire body or "content"
-                            <ul>
-                                <li>Arms can be <code>lists</code> and <code>images</code> are the legs etc...</li>
-                            </ul>
-                        </li>
-                        <li>Then the <code>footer</code> for the feet</li>
-                    </ul>
-                    <p>After assembling the skeleton back to life, we use CSS to give it features and clothes. With CSS
-                        we can choose how big or small each body part should be, the colour of it's clothes & shoes and
-                        everything else. CSS is loaded after the HTML, then applied, almost like dressing up the
-                        skeleton after raising it, except very quickly.
-                    </p>
                 </section>
-                <section id="control-flow">
-                    <h3>Control flow - If & Loops</h3>
-                    <p>An example control flow graph about making press coffee</p>
-                    <div class="row mr-1 mb-2 mh-75">
-                        <div class="col mb-1">
-                            <p>In this example control flow graph we can multiple examples of control flow logic. For
-                                example,
-                                <code>if</code> there is not enough coffee, we grind more,
-                                <code>else</code> we exit the statement.
-                            <p><em>If there is no code in the <code>else</code> body, we can omit the keyword and body.</em>
-                            </p>
-                            <p>We can write this in <em>pseudocode</em> as:<br></p>
-                            <pre><code
-                                    class="language-javascript rounded-5rem">if (coffeeAmount < amountRequired) {<br>&emsp;grind more<br>} else { <br>&emsp;continue<br>}<br></code></pre>
-                            <p>Basically this code block says if the coffeeAmount <em>condition</em> is true, then grind
-                                more. So if the amount of ground coffee is less than the amount required, then grind
-                                more.
-                            </p>
-                            <p>If we look further into the "grind more" block, we can see this can be written as a
-                                <code>while</code> loop:<br>
-                            </p>
-                            <pre><code class="language-javascript rounded-5rem">if (coffeeAmount < amountRequired) {<br>&emsp;while (coffeeAmount < amountRequired) {<br>&emsp;&emsp;grindMore();<br>&emsp;&emsp;++coffeeAmount;<br>&emsp;}<br>}<br></code></pre>
-                            <p>This while loop will first check the condition, contained in the <code>(round
-                                brackets)</code>. We say <em>while</em> this condition is true, it will <em>execute</em>
-                                the code in the body of the loop repeatedly until the condition is false. Loops that
-                                have an <em>always true</em> condition will repeat infinitely.
-                            </p>
-                        </div>
-                        <img alt="Margin Example" class="col-md-5 blog-image rounded-5rem image-75"
-                             src="/assets/img/png/control-flow.png">
-                    </div>
-                </section>
-                <section id="for-loops">
-                    <h3>For Loops</h3>
-                    <p>An example for loop:</p>
-                    <pre><code class="language-javascript rounded-5rem">for (let i = count; i > 0; --i) {<br>&emsp;let noun = i === 1 ? "bottle" : "bottles";<br>&emsp;console.log(i + " " + noun + " of beer on the wall,");<br>&emsp;console.log(i + " " + noun + " of beer,");<br>&emsp;noun = i - 1 === 1 ? "bottle" : "bottles";<br>&emsp;console.log("Take one down, pass it around, " + (i - 1) + " " + noun + " of beer on the wall.\n")<br>}<br></code></pre>
-                    <p>This for loop takes in a <code>parameter</code> <strong>count</strong> and prints the <em>"99
-                        bottles of beer on
-                        the wall"</em> song, descending to 0 from the original count. First, it checks the condition
-                        <code>for (let i = count; i > 0; --i)</code> and creates the variable <code>i</code> with the
-                        value of <strong>count</strong>. Next it checks if <code
-                        >i</code> is greater ( <code>></code> operator ) than <code>0</code> and declares <code>i</code>
-                        is to become <code>i - 1</code> after each successful run through the loop.
+                <section id="influence">
+                    <h3>The influence on learning</h3>
+                    <p>HTML & CSS are two vital web technologies, that are used in combination, however achieve
+                        different thins. An analogy of the difference between the two would be:
                     </p>
-                    <p>The the body of the loop just runs through printing out the song, changing the bottles noun based
-                        on whether it's the last or second to last loop through. An example of the output of the code
-                        looks like this:<br>
-                    </p>
-                    <pre><code class="language-javascript rounded-5rem">/**<br>2 bottles of beer on the wall,<br>2 bottles of beer,<br>Take one down, pass it around, 1 bottle of beer on the wall.<br>**/</code></pre>
-                </section>
-                <section id="the-html-dom">
-                    <h3>The HTML DOM & Interactions</h3>
-                    <p><em>"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows
-                        programs and scripts to dynamically access and update the content, structure, and style of a
-                        document."</em>
-                    </p>
-                    <p>The HTML DOM or "Document Object Model" is a standard for how to get, change, add, or delete HTML
-                        elements. We can use Javascript or other programming languages to access the
-                        <strong>methods</strong> and <strong>properties</strong> of the DOM.
-                        For example, changing the text in an html <code>&#60;p&#62;</code> or paragraph element, using
-                        the HTML DOM requires using the <code>.getElementById()</code> method to access the <code>.innerHTML</code>
-                        property. We can write this in Javascript as:
-                    </p>
-                    <pre><code class="language-javascript rounded-5rem">&#60;script&#62;<br>document.getElementById("foo").innerHTML = "Hello World";<br>&#60;script&#62;</code></pre>
-                    <p>The HTML DOM has numerous <strong>methods</strong> and <strong>properties</strong> for
-                        interacting with elements. You can see large list, as well as explanations <a
-                                href="https://www.w3schools.com/js/js_htmldom.asp">at this link.</a>
-                    </p>
-                </section>
-                <section id="arrays-vs-objects">
-                    <h3>Accessing data from Arrays vs Objects</h3>
-                    <h4>Objects</h4>
-                    <p>An object's <strong>properties</strong> consist of a <strong>key</strong> and
-                        <strong>value</strong> pair. An example of this basic syntax is:</p>
-                    <pre><code
-                            class="language-javascript rounded-5rem">var object = {<br>&emsp;key: 'value'<br>};
-                    </code></pre>
-                    <p>An object's <strong>properties</strong> can be accessed, added, removed or
-                        <strong>mutated</strong> by accessing them through Javascript's <em>dot</em> or
-                        <em>brackets</em> notation:</p>
-                    <pre><code
-                            class="language-javascript rounded-5rem">var person = {<br>&emsp;name: 'Ryan',<br>&emsp;age: '25'<br>};<br>person.name = "Ryan Bosher"; /** dot notation mutation **/<br>var tempAge = person['age']; /** bracket notation accessing **/
-                    </code></pre>
-                    <h4>Arrays</h4>
-                    <p>Arrays are used to store multiple <em>values</em> in one <strong>variable</strong>. Instead of
-                        being key-value paired like objects, Arrays use <strong>indexing</strong>, beginning at
-                        <em>0</em>. We can assign some values to an array like this:</p>
-                    <pre><code class="language-javascript rounded-5rem">var strings = ['foo', 'bar'];</code></pre>
-                    <p>To access a variable from the array, we can access it through brackets notations:</p>
-                    <pre><code class="language-javascript rounded-5rem">strings[0]; // returns 'foo'</code></pre>
-                    <p>Arrays also have built-in methods for <strong>adding</strong>, <strong>removing</strong> and
-                        <strong>shifting</strong> elements.</p>
-                    <pre><code class="language-javascript rounded-5rem">/** push() - Adds item(s) to the end of an array **/<br>strings.push('far');<br>/** pop() - Removes the last item of an array **/<br>strings.pop();<br>/** shift() - Removes the first item of an array **/<br>strings.shift();<br>/** unshift() - Adds item(s) to the front of an array **/<br>strings.unshift('boo');<br></code></pre>
-                </section>
-                <section id="functions">
-                    <h3>Functions & Why</h3>
-                    <p>A function is just a block of Javascript code designed to perform a specific task. They are
-                        defined with the <code>function</code> keyword. A function is <strong>executed</strong> when
-                        <strong>called</strong> or <strong>invoked</strong>. An example function is as follows:</p>
-                    <pre><code class="language-javascript rounded-5rem">function example(p1, p2) {<br>&emsp;return p1 * p2;<br>} // This function returns the product of p1 * p2</code></pre>
-                    <ul>
-                        <li><code>function</code> is the keyword to declare a function.</li>
-                        <li><code>example</code> is the name of the function and what we use to call it.</li>
-                        <li><code>(p1, p2)</code> are the parameters of the function, or what is <em>passed</em> in.
-                        </li>
-                        <li><code>return</code> is the keyword used to return a product from the function to the calling
-                            code.
-                        </li>
-                    </ul>
-                    <p>Invoking this function and the result can be seen here:</p>
-                    <pre><code class="language-javascript rounded-5rem">function multiplyExample(p1, p2) {<br>&emsp;return p1 * p2;<br>}<br><br>var x = multiplyExample(4, 3); // x will hold 12
-                    </code></pre>
-                    <h4>But why?</h4>
-                    <p>Instead of making the function above, we can just write 4 * 3 in it's place. But what if instead
-                        of 4 * 3 we were converting a temperature from Celsius to Fahrenheit, then we needed to do it 10
-                        times. We could just write out <code>x = (5/9) * (x-32)</code> 10 times throughout our code,
-                        however this would become unwieldy very quickly.</p>
-                    <p>With functions we can <strong>declare once</strong> and <strong>use it forever</strong>. We can
-                        declare a function that does our temperature conversion and just call it whenever we need to.
-                        Our code will be simpler and smaller.</p>
                 </section>
                 <nav aria-label="pagination-buttons" class="blog-pagination">
                     <a class="btn btn-outline-secondary" href="/sprint-3/js-fundamentals.html">Older</a>
