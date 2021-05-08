@@ -56,7 +56,7 @@
 }
 </code></pre>
 
-<pre><code class="language-javascript rounded-5rem">function append(textToAppend) {
+                    <pre><code class="language-javascript rounded-5rem">function append(textToAppend) {
   let paragraph = document.getElementById("result"); // get the paragraph
   let text = document.createTextNode("// " + textToAppend); // get the text to append to the paragraph
   let linebreak = document.createElement("br"); // create a linebreak to append
@@ -70,18 +70,18 @@
                         <div class="col mb-1">
                             <div class="input-group mb-3">
                                 <div class="input-group-prepend">
-                                    <button class="btn btn-outline-primary" type="button"
-                                            onclick="fizzbuzz(document.getElementById('num').value)">Submit
+                                    <button class="btn btn-outline-primary" onclick="fizzbuzz(document.getElementById('num').value)"
+                                            type="button">Submit
                                     </button>
                                 </div>
-                                <input type="number" class="form-control" value="15" aria-label="submit-btn"
-                                       aria-describedby="btn" id="num" name="number-input" required>
+                                <input aria-describedby="btn" aria-label="submit-btn" class="form-control" id="num"
+                                       name="number-input" required type="number" value="15">
                             </div>
                             <p><em>There is no real form validation here, so <strong>be careful</strong>.</em></p>
                         </div>
                         <div class="col mb-1">
-                            <pre><code id="result"
-                                       class="rounded-5rem hljs-comment">// output here<br></code></pre>
+                            <pre><code class="rounded-5rem hljs-comment"
+                                       id="result">// output here<br></code></pre>
                         </div>
                     </div>
                     <hr>
