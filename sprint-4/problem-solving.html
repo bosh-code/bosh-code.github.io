@@ -60,7 +60,58 @@
                 </section>
                 <section id="elegant-solution">
                     <h3>An elegant solution</h3>
-                    <p>Some text</p>
+                    <p>I was trying to get darkmode working correctly for this blog. Since it uses Bootstrap and custom
+                        CSS, to create a dark version was more work than I was willing to put in for a small quality of
+                        life feature. As it was something I didn't know where to start, I googled around and found a few
+                        solutions, either using pure CSS or Javascript/PHP with cookies. I tried using the more complex
+                        options, however they would introduce bugs or strange visual artifacts of switching between
+                        light and dark.</p>
+                    <p>Eventually I rolled back my branch, and implemented two stylesheets, one light and one dark which
+                        I generated online. The dark sheet makes use of <code>@media (prefers-color-scheme: dark)</code>
+                        which will take the user's device preference and apply the sheet accordingly. There is no manual
+                        way to switch between them, but all devices that support the feature now automatically toggle
+                        the theme. I found this solution elegant as it uses one line of code, happens behind the scenes
+                        and was very quick to implement. I could see myself spending far too long on the feature due to
+                        my limited skills and this is a good trade-off in my opinion.
+                    </p>
+                </section>
+                <section id="techniques">
+                    <h3>Problem solving techniques</h3>
+                    <p>All of the techniques are something I have used in the past in some form. Having experience with
+                        them, I know how I like to and when to use them.</p>
+                    <ul>
+                        <li><strong>Pseudocode</strong> - is something I use when dealing with larger or more complex
+                            problems. I write it before hand, either the class, file or block of logic.
+                        </li>
+                        <li><strong>Trying something</strong> - never hurts. Sometimes the really easy and obvious
+                            solution is the write one. Sometimes I get a little stuck in trying things, so I try to use
+                            it sparingly.
+                        </li>
+                        <li><strong>Rubber ducky method</strong> - I often use it when running through logic or method
+                            calls that aren't working, especially if I can't use a debugger.
+                        </li>
+                        <li><strong>Reading error messages</strong> - has been less useful in Javascript as I don't know
+                            many of the error messages yet. With languages I'm more familiar with, it's a lot quicker.
+                        </li>
+                        <li><strong>Console.logging</strong> - I use it a lot for sanity checking logic quickly, can be
+                            a quick way to ensure something has happened correctly without breakpoints and the debugger.
+                        </li>
+                        <li><strong>Googling</strong> - is the first step in looking for solutions external. When I've
+                            tried to work it out on my own and can't find a solution, google is the next step.
+                        </li>
+                        <li><strong>Asking your peers for help</strong> - the next step after googling, if I can't find
+                            a solution or understand the one I find, I'll ask my peers. I always prefer it when someone
+                            tries something themself first before asking for help, so I try to do the same.
+                        </li>
+                        <li><strong>Asking coaches for help</strong> - would be the last step in external help, if my
+                            peers can't help, either I'm doing something wrong and there's a better way they know, or
+                            it's not as simple as I think.
+                        </li>
+                        <li><strong>Improving your process with reflection</strong> - is very important. Once I'm
+                            completed the problem, I'll try to do a couple practice methods and use it to incorporate
+                            the knowledge.
+                        </li>
+                    </ul>
                 </section>
                 <nav aria-label="pagination-buttons" class="blog-pagination">
                     <a class="btn btn-outline-secondary" href="/sprint-3/js-fundamentals.html">Older</a>
