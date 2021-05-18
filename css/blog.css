@@ -1,4 +1,3 @@
-/* CSS here */
 .toggle.ios, .toggle-on.ios, .toggle-off.ios {
 	border-radius: .5rem;
 }
@@ -24,6 +23,10 @@
 
 .category-title {
 	white-space: nowrap;
+}
+
+#main {
+	min-height: 600px;
 }
 
 @media (max-width: 768px) {

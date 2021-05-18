@@ -1,5 +1,7 @@
 # bosh-code.github.io
+
 ###### _By Ryan Bosher_
+
 ___
 GitHub.io page for personal blog
 

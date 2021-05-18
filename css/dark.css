@@ -2286,4 +2286,8 @@
 		background-clip: padding-box;
 		border: 1px solid #575757;
 	}
+
+	#main {
+		min-height: 600px;
+	}
 }
