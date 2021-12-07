@@ -1,7 +1,0 @@
-Bootstrap: https://github.com/twbs
-jQuery: https://jquery.com/
-Font Awesome: https://fontawesome.com/
-Google Fonts: https://fonts.google.com/
-HighlightJS: Ivan Sagalaev: https://highlightjs.org/
-Long-press-event: https://github.com/john-doherty/long-press-event
-Disable-selection: https://stackoverflow.com/a/11368321
