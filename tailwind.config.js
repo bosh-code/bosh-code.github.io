@@ -10,9 +10,13 @@ module.exports = {
   darkMode: 'media', // or 'media' or 'class'
   theme: {
     fontFamily: {
-      sans: ['Helvetica Neue', 'Helvetica','Arial','sans-serif']
+      sans: ['Helvetica Neue', 'Helvetica','Arial', "Roboto", 'sans-serif'],
+      serif: ['Georgia','serif'],
     },
     extend: {
+      fontFamily: {
+        mono: ['Fira Code']
+      },
       colors: {
         'picton-blue': {
           light: '#337AB7',
