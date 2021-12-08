@@ -1,6 +1,6 @@
 module.exports = {
   prefix: '',
-  mode: 'jit',
+  mode: process.env.NODE_ENV ? 'jit' : undefined,
   purge: {
     enabled: true,
     content: [

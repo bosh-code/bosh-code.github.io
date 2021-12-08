@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
@@ -8,19 +10,19 @@
     font-family: "Fira Code VF";
     font-weight: 400;
     /* Path relative to ./dist */
-    src: url(../dist/assets/fonts/firacode/FiraCode-VF.woff2) format("woff2");
+    src: url(./assets/fonts/firacode/FiraCode-VF.woff2) format("woff2");
   }
   @font-face {
     font-family: "Fira Code";
     font-weight: 400;
     /* Path relative to ./dist */
-    src: url(../dist/assets/fonts/firacode/FiraCode-Regular.woff2) format("woff2");
+    src: url(./assets/fonts/firacode/FiraCode-Regular.woff2) format("woff2");
   }
   @font-face {
     font-family: "Fira Code";
     font-weight: 500;
     /* Path relative to ./dist */
-    src: url(../dist/assets/fonts/firacode/FiraCode-Medium.woff2) format("woff2");
+    src: url(./assets/fonts/firacode/FiraCode-Medium.woff2) format("woff2");
   }
 }
 
@@ -28,38 +30,174 @@
   .font-thin {
     font-variation-settings: 'wght' 100;
   }
+
   .font-extralight {
     font-variation-settings: 'wght' 200;
   }
+
   .font-light {
     font-variation-settings: 'wght' 300;
   }
+
   .font-normal {
     font-variation-settings: 'wght' 400;
   }
+
   .font-medium {
     font-variation-settings: 'wght' 500;
   }
+
   .font-semibold {
     font-variation-settings: 'wght' 600;
   }
+
   .font-bold {
     font-variation-settings: 'wght' 700;
   }
+
   .font-extrabold {
     font-variation-settings: 'wght' 800;
   }
+
   .font-black {
     font-variation-settings: 'wght' 900;
   }
 }
 
-body {
-  font-family: "Fira Code", monospace;
+@layer base {
+  .heading {
+    @pply prose prose-2xl tracking-widest;
+  }
 }
+
 
 @supports (font-variation-settings: normal) {
   body {
     font-family: "Fira Code VF", monospace;
   }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fira Code", monospace;
+  background-color: #414141;
+  color: #a3c3de;
+}
+
+img.rounded {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+body {
+  @apply tracking-normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+  color: #a3c3de;
+
+}
+
+.spacer {
+  flex: 1;
+}
+
+h2,
+h3 {
+  @apply tracking-wide;
+}
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  flex: 1 0 auto;
+  margin: 82px auto 32px;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  margin-top: 8px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  line-height: 20px;
+  position: absolute;
+  left: 0 ; right: 0; bottom: 0;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  position: relative;
+  z-index: 500;
+}
+
+.carat {
+  color: #4da9f5;
+}
+
+.name {
+  color: #b3c47c;
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .35em solid #dcdcdc; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 2s steps(11, end),
+    blink-caret .75s step-end infinite;
+  position: relative;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #374151; }
 }
