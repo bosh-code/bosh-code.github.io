@@ -76,26 +76,22 @@
   }
 }
 
+:root {
+  font-size: 16px;
+}
+
 html, body {
-  height: 100%;
+  @apply h-full antialiased;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-family: "Fira Code", monospace;
-  @apply bg-terminal-bg text-terminal-text tracking-normal;
+  @apply m-0 flex flex-col box-border text-sm bg-terminal-bg text-terminal-text tracking-normal;
 }
 
 img.rounded {
   @apply ring-4 ring-terminal-string object-cover rounded-full;
   @apply xl:h-80 xl:w-80 md:h-64 md:w-64 h-48 w-48;
-  //sizing
   @apply xl:m-10 lg:m-8 md:m-6 m-4;
 }
 
@@ -105,53 +101,31 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 8px 0;
-  @apply tracking-wide;
+  @apply mx-0 my-4 tracking-wide;
 }
 
 .spacer {
-  flex: 1;
+  @apply flex-1;
 }
 
 .toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  @apply bg-terminal-header text-terminal-text shadow-md px-2 py-1;
+  @apply flex items-center absolute bg-terminal-header text-terminal-text shadow-md px-2 py-1 top-0 left-0 right-0;
 }
 
 .content {
-  display: flex;
-  flex: 1 0 auto;
-  margin: 82px auto 32px;
-  padding: 0 16px;
-  max-width: 960px;
-  flex-direction: column;
-  align-items: center;
+  @apply flex py-0 mx-auto mt-24 mb-8 mx-4 flex-1 flex-col items-center;
 }
 
 footer {
-  margin-top: 8px;
-  display: flex;
-  flex-shrink: 0;
-  align-items: center;
-  line-height: 20px;
-  position: absolute;
-  @apply inset-x-0 bottom-0;
+  @apply flex shrink mt-2 items-center absolute inset-x-0 bottom-0;
 }
 
 footer a {
-  display: flex;
-  align-items: center;
+  @apply flex items-center;
 }
 
 h1 {
-  position: relative;
-  z-index: 500;
+  @apply relative;
 }
 
 .carat {
@@ -163,30 +137,27 @@ h1 {
 }
 
 .typewriter h1 {
-  @apply border-terminal-cursor;
-  overflow: hidden;
+  @apply relative overflow-hidden whitespace-nowrap border-terminal-cursor;
   border-right: .35em solid #dedede;
-  white-space: nowrap;
   animation: typing 2s steps(11, end),
-  blink-caret .75s step-end infinite;
-  position: relative;
+  blink-cursor .75s step-end infinite;
 }
 
 @keyframes typing {
   from {
-    width: 0
+    @apply w-0;
   }
   to {
-    width: 100%
+    @apply w-full;
   }
 }
 
-@keyframes blink-caret {
+@keyframes blink-cursor {
   from, to {
-    border-color: transparent
+    @apply border-transparent;
   }
   50% {
-    border-color: #dedede;
+    @apply border-terminal-cursor;
   }
 }
 
@@ -195,7 +166,7 @@ h1 {
 }
 
 .source:hover span {
-  display: none;
+  @apply hidden;
 }
 
 .source:hover:before {
