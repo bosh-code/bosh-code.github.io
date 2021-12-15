@@ -1,36 +1,46 @@
 module.exports = {
   prefix: '',
-  mode: process.env.NODE_ENV ? 'jit' : undefined,
-  purge: {
-    enabled: true,
-    content: [
-      './src/**/*.{html,ts}',
-    ]
-  },
+  content: ['./src/**/*.{html,ts}'],
   darkMode: 'media', // or 'media' or 'class'
   theme: {
-    fontFamily: {
-      sans: ['Helvetica Neue', 'Helvetica','Arial', "Roboto", 'sans-serif'],
-      serif: ['Georgia','serif'],
+    typography: {
+      DEFAULT: {
+        css: {
+          color: 'colors.terminal-text'
+        }
+      }
     },
     extend: {
       fontFamily: {
         mono: ['Fira Code']
       },
       colors: {
-        'picton-blue': {
-          light: '#337AB7',
-          DEFAULT: '#337AB7',
-          dark: '#14b367',
+        'terminal-bg': {
+          DEFAULT: '#414141',
         },
-        'nav-hover-blue': {
-          DEFAULT: '#286090',
+        'terminal-header': {
+          DEFAULT: '#2b2b2b',
         },
-        'nav-menu-active':{
-          DEFAULT: '#1d4568',
+        'terminal-text': {
+          DEFAULT: '#FFFFFF',
         },
-        'new': {
-          DEFAULT: '#D9EDF7',
+        'terminal-string': {
+          DEFAULT: '#f7d18b',
+        },
+        'terminal-folder': {
+          DEFAULT: '#a3c3de',
+        },
+        'terminal-input': {
+          DEFAULT: '#b8ca7e',
+        },
+        'terminal-chevron': {
+          DEFAULT: '#ed73be'
+        },
+        'terminal-tilde': {
+          DEFAULT: '#76c3f9'
+        },
+        'terminal-cursor': {
+          DEFAULT: '#dedede'
         },
       }
     },
