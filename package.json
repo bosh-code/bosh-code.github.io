@@ -1,6 +1,6 @@
 {
   "name": "bosh-code.github.io",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,8 +24,8 @@
     "@angular/router": "~13.0.3",
     "@fortawesome/angular-fontawesome": "^0.10.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
@@ -54,8 +54,8 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "lite-server": "^2.6.1",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.4",
-    "tailwindcss": "^2.2.19",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.2",
     "typescript": "~4.4.4"
   }
 }
